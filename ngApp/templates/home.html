@@ -1,5 +1,6 @@
-<h1>Home Page</h1>
-<body ng-controller="HomeController as vm">
-  <h1>Hello World</h1>
-  <input ng-model="vm.food" />
-  <button  ng-click="test()">Submit</button>
+<h1>Calculate</h1>
+
+<input ng-model="vm.price" placeholder="Enter price.."/>
+<button ng-click="vm.calculateTax()">Calculate</button>
+
+<h1>total:{{vm.total}}</h1>

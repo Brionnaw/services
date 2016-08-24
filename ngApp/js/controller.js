@@ -3,12 +3,13 @@ var MyApp;
     var Controllers;
     (function (Controllers) {
         var HomeController = (function () {
-            function HomeController() {
+            function HomeController(productService) {
+                this.productService = productService;
             }
-            HomeController.prototype.test = function () {
-                console.log(this.food);
+            HomeController.prototype.calculateTax = function () {
+                var num = parseInt(this.price);
+                this.total = this.productService.calculateTax(num);
             };
-            ;
             return HomeController;
         }());
         Controllers.HomeController = HomeController;
