@@ -4,14 +4,14 @@
     <meta charset="utf-8">
   <link rel="stylesheet" href="ngApp/app.css">
     <title>Service</title>
+    <base href="/" />
   </head>
-  <body>
-    <h1>Hello World</h1>
-    <input ng-model="food" />
-    {{food}}
+
+    <ui-view></ui-view>
     <!-- app scripts -->
     <script src="bower_components/angular/angular.min.js"></script>
     <script src ="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="ngApp/js/app.js"></script>
+    <script src="ngApp/js/controller.js"></script>
 </body>
 </html>
